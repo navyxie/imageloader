@@ -1,0 +1,30 @@
+.imageLoaderMaskContainer{
+    z-index: 8;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.498039);
+    text-align: center;
+    display: block;
+}
+.imageLoaderMaskContainer .loadingContent{
+    border-radius: 5px;
+    position: absolute;
+    width: 240px;
+    height: 30px;
+    margin-left: -120px;
+    left:50%;
+    top:50%;
+    margin-top: -15px;
+    background: #fafafa;
+}
+.imageLoaderMaskContainer .imageLoaderIn{
+    width: 0;
+    background: yellow;
+}
+.imageLoaderMaskContainer .textContent{
+    background: none;
+    line-height: 30px;       
+}
