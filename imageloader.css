@@ -1,5 +1,5 @@
 .imageLoaderMaskContainer{
-    z-index: 8;
+    z-index: 9999;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -9,7 +9,7 @@
     text-align: center;
     display: block;
 }
-.imageLoaderMaskContainer .loadingContent{
+.imageLoaderMaskContainer .loadingContent,.imageLoaderMaskContainer .imageLoaderIn, .imageLoaderMaskContainer .textContent{
     border-radius: 5px;
     position: absolute;
     width: 240px;

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <title>imageloader</title>
+    <script type="text/javascript" src="../imageloader.js"></script>
+    <link rel="stylesheet" type="text/css" href="../imageloader.css">
+  </head>
+  <body>
+    <h2 style="text-align:center">imageloader demo</h2>
+    <div id="imageContainer"></div>
+    <script type="text/javascript">
+      var imagesArr = ['./images/buy_domain.png','./images/dusk.jpg','./images/malaysia_dusk.jpg','./images/malaysia_sea.jpg'];
+      var updateFn = function(){
+        var img = document.createElement('IMG');
+        img.setAttribute('src',arguments[2]);
+        document.getElementById('imageContainer').appendChild(img);
+      }
+      ImageLoader(imagesArr,{update:updateFn,complete:function(){
+        alert('All images loaded.');
+      },silent:true});
+    </script>
+  </body>
+</html>
