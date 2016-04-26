@@ -132,7 +132,6 @@
     }
     //加载单张图片的回调
     function _updateLoadingCb(count,len){
-        console.log(1);
         var loadTextWidth =  doc.getElementById('imageLoaderMaskContainer').children[0].offsetWidth;
         doc.getElementById('loadPercent').innerHTML = ((count/len)*100).toFixed(2);
         doc.getElementById('imageLoaderIn').style.width = loadTextWidth*count/len+'px';
